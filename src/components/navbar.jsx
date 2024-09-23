@@ -1,10 +1,21 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import  '../App.css'
 
-function Navbar() {
+
+function Navigationbar() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" data-bs-theme="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Homco</Navbar.Brand>
+      <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={`${process.env.PUBLIC_URL}/assets/Homco.png`}
+              width="150"
+              height="40"
+              className="d-inline-block align-top"
+            />{' '}
+            
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -20,4 +31,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navigationbar;
