@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar, Nav, Button, Row, Col, Card } from 'react-bootstrap';
+import { Container,  Nav, Button, Row, Col, Card } from 'react-bootstrap';
 import './App.css';  // Add custom styles if needed
 
 // Components for each section
@@ -11,24 +11,13 @@ import Footer from './components/Footer';
 import ServicesSection from './components/ServicesSection';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Navigationbar from './components/navbar.jsx';
+
 
 function App() {
   return (
     <>
-      {/* Navigation Bar */}
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">Your Brand</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+   <Navigationbar/>
 
       {/* Hero Section */}
       <Hero />
@@ -36,7 +25,7 @@ function App() {
       {/* Features Section */}
       <Features />
 
-      <ServicesSection />
+      {/* <ServicesSection /> */}
 
       {/* Product Showcase */}
       <ProductGrid />

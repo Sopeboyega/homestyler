@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import  '../App.css'
 
 const Features = () => {
   return (
-    <Container className="features-section py-5">
+    <Container className="features-section py-5 ">
       <h2 className="text-center mb-4">Our Features</h2>
       <Row>
         <Col md={4}>
